@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Closet View Controller-->
         <scene sceneID="CuC-8g-qBG">
             <objects>
-                <viewController id="cbB-Ob-y7X" sceneMemberID="viewController">
+                <viewController id="cbB-Ob-y7X" customClass="closetViewController" customModule="HCI_2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KvU-xa-4UQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,12 +33,26 @@
                                     <segment title="下半身"/>
                                     <segment title="配件"/>
                                 </segments>
+                                <connections>
+                                    <action selector="closetSegmentAction:" destination="cbB-Ob-y7X" eventType="valueChanged" id="xA5-YW-fSO"/>
+                                </connections>
                             </segmentedControl>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tabel_upper" rowHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="2K9-ZF-UGD">
+                                <rect key="frame" x="32" y="291" width="327" height="40"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2K9-ZF-UGD" id="v4z-hh-omh">
+                                    <rect key="frame" x="0.0" y="0.0" width="327" height="39.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KBo-pc-BHU"/>
                     </view>
                     <navigationItem key="navigationItem" id="mw2-rQ-lfn"/>
+                    <connections>
+                        <outlet property="upperTabelView" destination="2K9-ZF-UGD" id="Naf-8q-8BR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksa-1Y-amP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

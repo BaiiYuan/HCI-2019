@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  closetViewController.swift
 //  HCI-2019
 //
 //  Created by 李栢淵 on 2019/5/12.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class closetViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
-
+    
 
 }
-

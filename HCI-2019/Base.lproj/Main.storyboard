@@ -52,10 +52,10 @@
         <!--add-->
         <scene sceneID="kb2-sz-029">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W1A-al-PNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="add" id="JW5-LE-2b5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="Ap1-VX-eNc"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W1A-al-PNR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="867" y="11"/>
         </scene>
