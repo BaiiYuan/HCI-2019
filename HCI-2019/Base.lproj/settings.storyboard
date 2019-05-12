@@ -32,7 +32,7 @@
         <scene sceneID="F6Y-FY-XBX">
             <objects>
                 <navigationController id="oJl-fp-qto" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Setting" image="first" id="geQ-H9-jTb"/>
+                    <tabBarItem key="tabBarItem" title="Setting" image="setting_icon" id="geQ-H9-jTb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V6U-zZ-o4V">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -48,6 +48,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="setting_icon" width="512" height="512"/>
     </resources>
 </document>

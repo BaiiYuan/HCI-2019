@@ -42,7 +42,7 @@
         <scene sceneID="4mN-Y9-jiG">
             <objects>
                 <navigationController id="hLD-mw-9K4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Add" image="second" id="PWc-57-Wsc"/>
+                    <tabBarItem key="tabBarItem" title="Add" image="plus_icon" id="PWc-57-Wsc"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WSQ-DX-Dgm">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -58,6 +58,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="second" width="30" height="30"/>
+        <image name="plus_icon" width="24" height="24"/>
     </resources>
 </document>

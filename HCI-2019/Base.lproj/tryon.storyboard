@@ -6,40 +6,38 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--TryOn-->
-        <scene sceneID="jRI-Ao-yqZ">
+        <!--View Controller-->
+        <scene sceneID="aD5-PT-Rby">
             <objects>
-                <tableViewController id="znb-Kq-sGW" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="07V-kE-HAZ">
+                <viewController id="1Jc-e0-3ct" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6jY-Sw-Qx3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <connections>
-                            <outlet property="dataSource" destination="znb-Kq-sGW" id="CRp-Bi-UcJ"/>
-                            <outlet property="delegate" destination="znb-Kq-sGW" id="XR6-DR-slD"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="TryOn" id="gz2-ZR-mJl"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uQF-Y2-zbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="hsA-kB-jYj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jLa-8u-LIM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Azv-Bc-tCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-228" y="34"/>
+            <point key="canvasLocation" x="-148" y="33"/>
         </scene>
         <!--Try On-->
         <scene sceneID="cL9-TG-MAT">
             <objects>
                 <navigationController id="2be-Mr-7Mw" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Try On" image="first" id="Rs4-YK-jLo"/>
+                    <tabBarItem key="tabBarItem" title="Try On" image="shirt_icon" id="Rs4-YK-jLo"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WwC-J1-8i2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="znb-Kq-sGW" kind="relationship" relationship="rootViewController" id="vFG-38-5qJ"/>
+                        <segue destination="1Jc-e0-3ct" kind="relationship" relationship="rootViewController" id="Zeu-Kg-LrE"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7lz-Y3-8Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -48,6 +46,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="shirt_icon" width="24" height="24"/>
     </resources>
 </document>

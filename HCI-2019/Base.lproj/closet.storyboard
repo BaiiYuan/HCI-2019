@@ -42,7 +42,7 @@
         <scene sceneID="K0D-qE-86B">
             <objects>
                 <navigationController id="yh4-dh-7JN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Closet" image="first" id="ihR-iu-c2t"/>
+                    <tabBarItem key="tabBarItem" title="Closet" image="closet_icon" id="ihR-iu-c2t"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f3I-fc-wli">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -58,6 +58,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="closet_icon" width="24" height="24"/>
     </resources>
 </document>
