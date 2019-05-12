@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Add-->
         <scene sceneID="3KS-Wx-DaO">
             <objects>
                 <tableViewController id="Lyn-It-dM1" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="Lyn-It-dM1" id="hxQ-JZ-9T2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Low-Rt-hS5"/>
+                    <navigationItem key="navigationItem" title="Add" id="Low-Rt-hS5"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NbN-RV-bCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

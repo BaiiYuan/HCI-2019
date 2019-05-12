@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Settings-->
         <scene sceneID="La5-WA-N9c">
             <objects>
                 <tableViewController id="8XX-Ct-WxN" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                             <outlet property="delegate" destination="8XX-Ct-WxN" id="cal-d0-EcY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Og7-Zv-ae6"/>
+                    <navigationItem key="navigationItem" title="Settings" id="Og7-Zv-ae6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jl5-dN-620" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,6 +48,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="setting_icon" width="512" height="512"/>
+        <image name="setting_icon" width="24" height="24"/>
     </resources>
 </document>
