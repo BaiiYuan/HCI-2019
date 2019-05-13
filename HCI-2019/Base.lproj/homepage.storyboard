@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lti-TS-cV4">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,7 +17,7 @@
                     <tabBarItem key="tabBarItem" title="Today" image="today_icon" id="mYD-3s-bxk"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="71L-0f-sod">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -33,11 +33,11 @@
             <objects>
                 <viewController id="zFA-6J-bA2" customClass="homepageViewController" customModule="HCI_2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b8W-Ib-6pI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IpB-2k-0H6">
-                                <rect key="frame" x="25" y="94" width="325" height="60"/>
+                                <rect key="frame" x="25" y="118" width="364" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUESDAY, May 14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIu-np-mec">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="15"/>
@@ -62,20 +62,37 @@
                                     <constraint firstAttribute="height" constant="60" id="q9x-ks-qek"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_1" translatesAutoresizingMaskIntoConstraints="NO" id="RIV-5f-k0t">
-                                <rect key="frame" x="25" y="164" width="325" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="RIV-5f-k0t" secondAttribute="height" multiplier="13:10" id="ag4-Wa-98p"/>
-                                </constraints>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="bw3-hp-7WE">
+                                <rect key="frame" x="25" y="188" width="364" height="920"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_1" translatesAutoresizingMaskIntoConstraints="NO" id="RIV-5f-k0t">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="280.00000000000006"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="RIV-5f-k0t" secondAttribute="height" multiplier="13:10" id="ag4-Wa-98p"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_2" translatesAutoresizingMaskIntoConstraints="NO" id="OAs-nP-eg1">
+                                        <rect key="frame" x="0.0" y="320" width="364" height="280"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="OAs-nP-eg1" secondAttribute="height" multiplier="13:10" id="B7b-zF-k6b"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_1" translatesAutoresizingMaskIntoConstraints="NO" id="rqF-p2-0WE">
+                                        <rect key="frame" x="0.0" y="640" width="364" height="280"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rqF-p2-0WE" secondAttribute="height" multiplier="13:10" id="lGY-F7-YMl"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="IpB-2k-0H6" firstAttribute="top" secondItem="vCh-lP-uB7" secondAttribute="top" constant="30" id="GE6-7e-3js"/>
-                            <constraint firstItem="vCh-lP-uB7" firstAttribute="trailing" secondItem="RIV-5f-k0t" secondAttribute="trailing" constant="25" id="KAk-u0-ogH"/>
-                            <constraint firstItem="RIV-5f-k0t" firstAttribute="top" secondItem="IpB-2k-0H6" secondAttribute="bottom" constant="10" id="XKB-VX-BAd"/>
-                            <constraint firstItem="RIV-5f-k0t" firstAttribute="leading" secondItem="vCh-lP-uB7" secondAttribute="leading" constant="25" id="YRG-wZ-S2W"/>
+                            <constraint firstItem="bw3-hp-7WE" firstAttribute="top" secondItem="IpB-2k-0H6" secondAttribute="bottom" constant="10" id="blO-CV-ov9"/>
+                            <constraint firstAttribute="trailing" secondItem="bw3-hp-7WE" secondAttribute="trailing" constant="25" id="kf4-R1-Il1"/>
                             <constraint firstItem="vCh-lP-uB7" firstAttribute="trailing" secondItem="IpB-2k-0H6" secondAttribute="trailing" constant="25" id="lTZ-cm-Fuz"/>
+                            <constraint firstItem="bw3-hp-7WE" firstAttribute="leading" secondItem="b8W-Ib-6pI" secondAttribute="leading" constant="25" id="uti-6Y-ozj"/>
                             <constraint firstItem="IpB-2k-0H6" firstAttribute="leading" secondItem="vCh-lP-uB7" secondAttribute="leading" constant="25" id="wEp-cW-iPw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vCh-lP-uB7"/>
@@ -96,7 +113,7 @@
             <objects>
                 <viewController id="JRu-BM-6zY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hlD-Uc-JhR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IMJ-mv-4lS"/>
@@ -111,7 +128,7 @@
             <objects>
                 <viewController id="YgL-ZC-oc9" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ahD-3w-0q9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YZ3-vn-Gbp"/>
@@ -126,7 +143,7 @@
             <objects>
                 <viewController id="3GX-JL-M7R" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YeR-UI-rNW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="23Z-Vn-c8B"/>
@@ -139,6 +156,7 @@
     </scenes>
     <resources>
         <image name="home_1" width="645" height="322"/>
+        <image name="home_2" width="1504" height="1008"/>
         <image name="today_icon" width="19" height="24"/>
     </resources>
 </document>
