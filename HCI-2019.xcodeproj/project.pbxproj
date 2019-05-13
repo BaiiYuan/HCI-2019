@@ -12,6 +12,8 @@
 		91380E762287FFB000F37435 /* add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91380E742287FFB000F37435 /* add.storyboard */; };
 		91380EF12288290D00F37435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91380EF02288290D00F37435 /* ViewController.swift */; };
 		91380EF322882A6800F37435 /* closetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91380EF222882A6800F37435 /* closetViewController.swift */; };
+		916057172289F3B60094D8F9 /* cameraTakingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916057162289F3B60094D8F9 /* cameraTakingViewController.swift */; };
+		916057192289FA330094D8F9 /* cameraTakedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916057182289FA330094D8F9 /* cameraTakedViewController.swift */; };
 		91CEA8F42287F88300790E35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CEA8F32287F88300790E35 /* AppDelegate.swift */; };
 		91CEA8FB2287F88300790E35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CEA8F92287F88300790E35 /* Main.storyboard */; };
 		91CEA8FD2287F88400790E35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91CEA8FC2287F88400790E35 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		91380E752287FFB000F37435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/add.storyboard; sourceTree = "<group>"; };
 		91380EF02288290D00F37435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		91380EF222882A6800F37435 /* closetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closetViewController.swift; sourceTree = "<group>"; };
+		916057162289F3B60094D8F9 /* cameraTakingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraTakingViewController.swift; sourceTree = "<group>"; };
+		916057182289FA330094D8F9 /* cameraTakedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraTakedViewController.swift; sourceTree = "<group>"; };
 		91CEA8F02287F88300790E35 /* HCI-2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCI-2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91CEA8F32287F88300790E35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91CEA8FA2287F88300790E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,16 +74,18 @@
 			children = (
 				91CEA8F32287F88300790E35 /* AppDelegate.swift */,
 				91CEA8F92287F88300790E35 /* Main.storyboard */,
-				91380EF02288290D00F37435 /* ViewController.swift */,
-				91380E712287FF7C00F37435 /* settings.storyboard */,
+				91CEA8FE2287F88400790E35 /* LaunchScreen.storyboard */,
 				91CEA9072287F9AF00790E35 /* homepage.storyboard */,
 				8C779A0222899D41008AB781 /* homepageViewController.swift */,
+				91CEA9152287FBCE00790E35 /* tryon.storyboard */,
+				91380E742287FFB000F37435 /* add.storyboard */,
+				91380EF02288290D00F37435 /* ViewController.swift */,
 				91CEA90C2287FB7E00790E35 /* closet.storyboard */,
 				91380EF222882A6800F37435 /* closetViewController.swift */,
-				91CEA9152287FBCE00790E35 /* tryon.storyboard */,
+				91380E712287FF7C00F37435 /* settings.storyboard */,
+				916057162289F3B60094D8F9 /* cameraTakingViewController.swift */,
+				916057182289FA330094D8F9 /* cameraTakedViewController.swift */,
 				91CEA8FC2287F88400790E35 /* Assets.xcassets */,
-				91380E742287FFB000F37435 /* add.storyboard */,
-				91CEA8FE2287F88400790E35 /* LaunchScreen.storyboard */,
 				91CEA9012287F88400790E35 /* Info.plist */,
 			);
 			path = "HCI-2019";
@@ -165,6 +171,8 @@
 				91380EF12288290D00F37435 /* ViewController.swift in Sources */,
 				91380EF322882A6800F37435 /* closetViewController.swift in Sources */,
 				91CEA8F42287F88300790E35 /* AppDelegate.swift in Sources */,
+				916057172289F3B60094D8F9 /* cameraTakingViewController.swift in Sources */,
+				916057192289FA330094D8F9 /* cameraTakedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

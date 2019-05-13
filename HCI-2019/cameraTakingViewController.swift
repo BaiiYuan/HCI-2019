@@ -1,32 +1,29 @@
 //
-//  homepageViewController.swift
+//  cameraTakingViewController.swift
 //  HCI-2019
 //
-//  Created by 陳柏文 on 2019/5/13.
+//  Created by 李栢淵 on 2019/5/14.
 //  Copyright © 2019 李栢淵. All rights reserved.
 //
 
 import UIKit
 
-class homepageViewController: UIViewController {
+class cameraTakingViewController: UIViewController {
 
+    @IBOutlet weak var cancelButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-    }
-    
-    @IBAction func showMessage(sender: UIButton) {
-        let alertController = UIAlertController(title: "Welcome to My First App", message: "Hello World", preferredStyle: UIAlertController.Style.alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        present(alertController, animated: true, completion: nil)
-    }
 
+    }
     
+    @IBAction func onClick(_ sender: UIButton) {
+        performSegue(withIdentifier: "goCameraTaking", sender: sender)
+    }
 
     /*
     // MARK: - Navigation
