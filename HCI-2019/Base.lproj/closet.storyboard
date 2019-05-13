@@ -66,12 +66,19 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upper" translatesAutoresizingMaskIntoConstraints="NO" id="3tl-ON-DYt">
                                                 <rect key="frame" x="22" y="275" width="362" height="524"/>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPP-hV-eqi">
+                                                <rect key="frame" x="346" y="26" width="33" height="35"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <state key="normal" title="Edit"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="3tl-ON-DYt" firstAttribute="leading" secondItem="2OR-Aa-caR" secondAttribute="leading" constant="22" id="5ll-fB-0SF"/>
+                                            <constraint firstItem="WPP-hV-eqi" firstAttribute="top" secondItem="2OR-Aa-caR" secondAttribute="top" constant="26" id="5mS-T7-tlM"/>
                                             <constraint firstItem="JKP-eZ-pV3" firstAttribute="top" secondItem="2OR-Aa-caR" secondAttribute="top" constant="66" id="67i-yX-CzG"/>
                                             <constraint firstItem="RZg-dk-Mfr" firstAttribute="leading" secondItem="2OR-Aa-caR" secondAttribute="leading" constant="35" id="8Mm-6B-PkY"/>
+                                            <constraint firstAttribute="trailing" secondItem="WPP-hV-eqi" secondAttribute="trailing" constant="35" id="Dhx-5y-bJs"/>
                                             <constraint firstItem="3tl-ON-DYt" firstAttribute="top" secondItem="aH9-5n-T1i" secondAttribute="bottom" constant="20" id="ES2-Yc-bcC"/>
                                             <constraint firstAttribute="trailing" secondItem="JKP-eZ-pV3" secondAttribute="trailing" constant="190" id="GJR-wA-sNB"/>
                                             <constraint firstAttribute="trailing" secondItem="RZg-dk-Mfr" secondAttribute="trailing" constant="35" id="IB3-7f-bcM"/>
@@ -110,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FCx-5U-c80" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-396" y="59"/>
+            <point key="canvasLocation" x="-397.10144927536237" y="58.928571428571423"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dxb-Ku-fpr">
@@ -125,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DLu-ri-rOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="262" y="-33"/>
+            <point key="canvasLocation" x="423" y="-66"/>
         </scene>
     </scenes>
     <resources>
