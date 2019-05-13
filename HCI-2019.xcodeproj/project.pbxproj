@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C779A0322899D41008AB781 /* homepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C779A0222899D41008AB781 /* homepageViewController.swift */; };
 		91380E732287FF7C00F37435 /* settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91380E712287FF7C00F37435 /* settings.storyboard */; };
 		91380E762287FFB000F37435 /* add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91380E742287FFB000F37435 /* add.storyboard */; };
 		91380EF12288290D00F37435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91380EF02288290D00F37435 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C779A0222899D41008AB781 /* homepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homepageViewController.swift; sourceTree = "<group>"; };
 		91380E722287FF7C00F37435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/settings.storyboard; sourceTree = "<group>"; };
 		91380E752287FFB000F37435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/add.storyboard; sourceTree = "<group>"; };
 		91380EF02288290D00F37435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				91380EF02288290D00F37435 /* ViewController.swift */,
 				91380E712287FF7C00F37435 /* settings.storyboard */,
 				91CEA9072287F9AF00790E35 /* homepage.storyboard */,
+				8C779A0222899D41008AB781 /* homepageViewController.swift */,
 				91CEA90C2287FB7E00790E35 /* closet.storyboard */,
 				91380EF222882A6800F37435 /* closetViewController.swift */,
 				91CEA9152287FBCE00790E35 /* tryon.storyboard */,
@@ -158,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C779A0322899D41008AB781 /* homepageViewController.swift in Sources */,
 				91380EF12288290D00F37435 /* ViewController.swift in Sources */,
 				91380EF322882A6800F37435 /* closetViewController.swift in Sources */,
 				91CEA8F42287F88300790E35 /* AppDelegate.swift in Sources */,

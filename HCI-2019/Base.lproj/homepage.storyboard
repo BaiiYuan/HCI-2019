@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lti-TS-cV4">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,10 +14,10 @@
         <scene sceneID="E1n-he-1Kw">
             <objects>
                 <navigationController id="Lti-TS-cV4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Today" image="first" id="mYD-3s-bxk"/>
+                    <tabBarItem key="tabBarItem" title="Today" image="today_icon" id="mYD-3s-bxk"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="71L-0f-sod">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -28,27 +28,55 @@
             </objects>
             <point key="canvasLocation" x="-1684" y="-174"/>
         </scene>
-        <!--View Controller-->
+        <!--Homepage View Controller-->
         <scene sceneID="YEX-Fh-5Lm">
             <objects>
-                <viewController id="zFA-6J-bA2" sceneMemberID="viewController">
+                <viewController id="zFA-6J-bA2" customClass="homepageViewController" customModule="HCI_2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b8W-Ib-6pI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBi-pW-ijI">
-                                <rect key="frame" x="65" y="124" width="74" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IpB-2k-0H6">
+                                <rect key="frame" x="25" y="94" width="325" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUESDAY, May 14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIu-np-mec">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="5Td-Zb-qED"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBi-pW-ijI">
+                                        <rect key="frame" x="0.0" y="20" width="101" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="qtm-iN-wQj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="q9x-ks-qek"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_1" translatesAutoresizingMaskIntoConstraints="NO" id="RIV-5f-k0t">
+                                <rect key="frame" x="25" y="163.99999999999997" width="325" height="250.00000000000009"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RIV-5f-k0t" secondAttribute="height" multiplier="13:10" id="ag4-Wa-98p"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vCh-lP-uB7" firstAttribute="bottom" secondItem="YBi-pW-ijI" secondAttribute="bottom" constant="648" id="58C-jq-Yyt"/>
-                            <constraint firstItem="YBi-pW-ijI" firstAttribute="top" secondItem="vCh-lP-uB7" secondAttribute="top" constant="36" id="9cD-PW-tds"/>
-                            <constraint firstItem="YBi-pW-ijI" firstAttribute="leading" secondItem="vCh-lP-uB7" secondAttribute="leading" constant="65" id="dG9-Rb-onO"/>
-                            <constraint firstItem="vCh-lP-uB7" firstAttribute="trailing" secondItem="YBi-pW-ijI" secondAttribute="trailing" constant="275" id="vHf-G0-lxa"/>
+                            <constraint firstItem="IpB-2k-0H6" firstAttribute="top" secondItem="vCh-lP-uB7" secondAttribute="top" constant="30" id="GE6-7e-3js"/>
+                            <constraint firstItem="vCh-lP-uB7" firstAttribute="trailing" secondItem="RIV-5f-k0t" secondAttribute="trailing" constant="25" id="KAk-u0-ogH"/>
+                            <constraint firstItem="RIV-5f-k0t" firstAttribute="top" secondItem="IpB-2k-0H6" secondAttribute="bottom" constant="10" id="XKB-VX-BAd"/>
+                            <constraint firstItem="RIV-5f-k0t" firstAttribute="leading" secondItem="vCh-lP-uB7" secondAttribute="leading" constant="25" id="YRG-wZ-S2W"/>
+                            <constraint firstItem="vCh-lP-uB7" firstAttribute="trailing" secondItem="IpB-2k-0H6" secondAttribute="trailing" constant="25" id="lTZ-cm-Fuz"/>
+                            <constraint firstItem="IpB-2k-0H6" firstAttribute="leading" secondItem="vCh-lP-uB7" secondAttribute="leading" constant="25" id="wEp-cW-iPw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vCh-lP-uB7"/>
                     </view>
@@ -56,10 +84,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K99-Mw-19i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-597" y="-174"/>
+            <point key="canvasLocation" x="-597.60000000000002" y="-174.96251874062969"/>
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="home_1" width="645" height="322"/>
+        <image name="today_icon" width="19" height="24"/>
     </resources>
 </document>
