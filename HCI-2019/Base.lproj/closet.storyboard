@@ -10,54 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Closet View Controller-->
-        <scene sceneID="CuC-8g-qBG">
-            <objects>
-                <viewController id="cbB-Ob-y7X" customClass="closetViewController" customModule="HCI_2019" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KvU-xa-4UQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VLOSET" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKP-eZ-pV3">
-                                <rect key="frame" x="32" y="130" width="193" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RZg-dk-Mfr">
-                                <rect key="frame" x="55" y="201" width="304" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="上半身"/>
-                                    <segment title="下半身"/>
-                                    <segment title="配件"/>
-                                </segments>
-                                <connections>
-                                    <action selector="closetSegmentAction:" destination="cbB-Ob-y7X" eventType="valueChanged" id="xA5-YW-fSO"/>
-                                </connections>
-                            </segmentedControl>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tabel_upper" rowHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="2K9-ZF-UGD">
-                                <rect key="frame" x="32" y="291" width="327" height="40"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2K9-ZF-UGD" id="v4z-hh-omh">
-                                    <rect key="frame" x="0.0" y="0.0" width="327" height="39.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="KBo-pc-BHU"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="mw2-rQ-lfn"/>
-                    <connections>
-                        <outlet property="upperTabelView" destination="2K9-ZF-UGD" id="Naf-8q-8BR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ksa-1Y-amP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-320.28985507246381" y="58.928571428571423"/>
-        </scene>
         <!--Closet-->
         <scene sceneID="K0D-qE-86B">
             <objects>
@@ -69,15 +21,115 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="cbB-Ob-y7X" kind="relationship" relationship="rootViewController" id="m9e-dR-dd3"/>
+                        <segue destination="2h9-yK-RAB" kind="relationship" relationship="rootViewController" id="wQT-7S-ZKo"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SYv-QE-BJj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1187" y="59"/>
         </scene>
+        <!--Closet View Controller-->
+        <scene sceneID="X6S-OY-rX4">
+            <objects>
+                <viewController id="2h9-yK-RAB" customClass="closetViewController" customModule="HCI_2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WPv-Un-mMu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPc-aw-7uB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2OR-Aa-caR">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1013"/>
+                                        <subviews>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VLOSET" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKP-eZ-pV3">
+                                                <rect key="frame" x="31" y="66" width="193" height="42"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="36"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="aH9-5n-T1i">
+                                                <rect key="frame" x="19" y="199" width="376" height="56"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </searchBar>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RZg-dk-Mfr">
+                                                <rect key="frame" x="35" y="137" width="344" height="29"/>
+                                                <segments>
+                                                    <segment title="上半身"/>
+                                                    <segment title="下半身"/>
+                                                    <segment title="配件"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="closetSegmentedAction:" destination="2h9-yK-RAB" eventType="valueChanged" id="glH-KP-fnw"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upper" translatesAutoresizingMaskIntoConstraints="NO" id="3tl-ON-DYt">
+                                                <rect key="frame" x="22" y="275" width="362" height="524"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="3tl-ON-DYt" firstAttribute="leading" secondItem="2OR-Aa-caR" secondAttribute="leading" constant="22" id="5ll-fB-0SF"/>
+                                            <constraint firstItem="JKP-eZ-pV3" firstAttribute="top" secondItem="2OR-Aa-caR" secondAttribute="top" constant="66" id="67i-yX-CzG"/>
+                                            <constraint firstItem="RZg-dk-Mfr" firstAttribute="leading" secondItem="2OR-Aa-caR" secondAttribute="leading" constant="35" id="8Mm-6B-PkY"/>
+                                            <constraint firstItem="3tl-ON-DYt" firstAttribute="top" secondItem="aH9-5n-T1i" secondAttribute="bottom" constant="20" id="ES2-Yc-bcC"/>
+                                            <constraint firstAttribute="trailing" secondItem="JKP-eZ-pV3" secondAttribute="trailing" constant="190" id="GJR-wA-sNB"/>
+                                            <constraint firstAttribute="trailing" secondItem="RZg-dk-Mfr" secondAttribute="trailing" constant="35" id="IB3-7f-bcM"/>
+                                            <constraint firstItem="aH9-5n-T1i" firstAttribute="centerX" secondItem="2OR-Aa-caR" secondAttribute="centerX" id="IJC-f7-jgM"/>
+                                            <constraint firstAttribute="trailing" secondItem="3tl-ON-DYt" secondAttribute="trailing" constant="30" id="Ucg-Fl-0HK"/>
+                                            <constraint firstItem="JKP-eZ-pV3" firstAttribute="leading" secondItem="2OR-Aa-caR" secondAttribute="leading" constant="31" id="ckJ-KA-aY9"/>
+                                            <constraint firstItem="aH9-5n-T1i" firstAttribute="leading" secondItem="2OR-Aa-caR" secondAttribute="leading" constant="19" id="eIV-4u-rq8"/>
+                                            <constraint firstItem="aH9-5n-T1i" firstAttribute="top" secondItem="RZg-dk-Mfr" secondAttribute="bottom" constant="34" id="sLT-Ln-TC3"/>
+                                            <constraint firstItem="RZg-dk-Mfr" firstAttribute="top" secondItem="JKP-eZ-pV3" secondAttribute="bottom" constant="29" id="vsW-Is-AiF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2OR-Aa-caR" firstAttribute="centerX" secondItem="MPc-aw-7uB" secondAttribute="centerX" id="3Ig-Mq-JWE"/>
+                                    <constraint firstItem="2OR-Aa-caR" firstAttribute="top" secondItem="MPc-aw-7uB" secondAttribute="top" id="C7E-fg-bXo"/>
+                                    <constraint firstAttribute="bottom" secondItem="2OR-Aa-caR" secondAttribute="bottom" id="Lf0-vu-kFz"/>
+                                    <constraint firstAttribute="trailing" secondItem="2OR-Aa-caR" secondAttribute="trailing" id="YrJ-4p-XMD"/>
+                                    <constraint firstItem="2OR-Aa-caR" firstAttribute="centerY" secondItem="MPc-aw-7uB" secondAttribute="centerY" constant="58.5" id="afC-h4-9sm"/>
+                                    <constraint firstItem="2OR-Aa-caR" firstAttribute="leading" secondItem="MPc-aw-7uB" secondAttribute="leading" id="rt7-kb-ajy"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MPc-aw-7uB" firstAttribute="leading" secondItem="WPv-Un-mMu" secondAttribute="leading" id="ORd-Jl-PkT"/>
+                            <constraint firstItem="MPc-aw-7uB" firstAttribute="top" secondItem="WPv-Un-mMu" secondAttribute="top" id="sn6-XP-3ZF"/>
+                            <constraint firstAttribute="bottom" secondItem="MPc-aw-7uB" secondAttribute="bottom" id="we3-XS-jDi"/>
+                            <constraint firstAttribute="trailing" secondItem="MPc-aw-7uB" secondAttribute="trailing" id="zkX-cM-XcO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M5J-vR-wNP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bV0-Sr-gDg"/>
+                    <connections>
+                        <outlet property="listImageView" destination="3tl-ON-DYt" id="AEP-gV-0bv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FCx-5U-c80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-396" y="59"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dxb-Ku-fpr">
+            <objects>
+                <viewController id="wIP-nT-rqU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T3f-Fc-87a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Lfb-Fa-llo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DLu-ri-rOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="-33"/>
+        </scene>
     </scenes>
     <resources>
         <image name="closet_icon" width="24" height="24"/>
+        <image name="upper" width="371" height="524"/>
     </resources>
 </document>

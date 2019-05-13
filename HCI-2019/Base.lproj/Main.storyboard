@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="867" y="11"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--My Tab Bar View Controller-->
         <scene sceneID="IZI-IA-y2m">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sFd-6Y-nju" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="sFd-6Y-nju" customClass="MyTabBarViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uGR-Wm-Ocr">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
