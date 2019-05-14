@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITabBarControllerDelegate {
+class addViewController: UIViewController, UITabBarControllerDelegate {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
