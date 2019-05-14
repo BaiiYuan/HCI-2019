@@ -127,7 +127,7 @@
         <!--Camera Taking View Controller-->
         <scene sceneID="wTl-Y9-eNP">
             <objects>
-                <viewController id="pzR-tf-jcd" customClass="cameraTakingViewController" customModule="HCI_2019" sceneMemberID="viewController">
+                <viewController id="pzR-tf-jcd" customClass="cameraTakingViewController" customModule="HCI_2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6WO-S9-aXq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,12 +212,12 @@
                     </view>
                     <connections>
                         <outlet property="useButton" destination="iaj-xN-CHe" id="Nc9-yh-Zjx"/>
-                        <segue destination="7cs-0n-pLu" kind="show" identifier="finishAdd" animates="NO" id="f7V-Vu-bMK"/>
+                        <segue destination="7cs-0n-pLu" kind="show" identifier="finishAdd" id="lPY-ns-qlc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSy-da-Nh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3371.0144927536235" y="-526.33928571428567"/>
+            <point key="canvasLocation" x="1586" y="-1003"/>
         </scene>
     </scenes>
     <resources>
@@ -229,6 +229,7 @@
         <image name="toBeContinued" width="200" height="112.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="f7V-Vu-bMK"/>
+        <segue reference="iMA-ZY-LFP"/>
+        <segue reference="lPY-ns-qlc"/>
     </inferredMetricsTieBreakers>
 </document>

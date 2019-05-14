@@ -10,17 +10,48 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Try On-->
         <scene sceneID="aD5-PT-Rby">
             <objects>
-                <viewController id="1Jc-e0-3ct" sceneMemberID="viewController">
+                <viewController title="Try On" id="1Jc-e0-3ct" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6jY-Sw-Qx3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personFullBody" translatesAutoresizingMaskIntoConstraints="NO" id="RDB-4G-gJB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change" translatesAutoresizingMaskIntoConstraints="NO" id="R4d-yo-jB3">
+                                <rect key="frame" x="147" y="522" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change" translatesAutoresizingMaskIntoConstraints="NO" id="0F8-b1-rxB">
+                                <rect key="frame" x="265" y="691" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change" translatesAutoresizingMaskIntoConstraints="NO" id="E8L-Cz-1YK">
+                                <rect key="frame" x="237" y="274" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="RDB-4G-gJB" secondAttribute="bottom" id="HwS-UA-WoT"/>
+                            <constraint firstItem="RDB-4G-gJB" firstAttribute="top" secondItem="6jY-Sw-Qx3" secondAttribute="top" id="LpA-NC-kHM"/>
+                            <constraint firstAttribute="trailing" secondItem="RDB-4G-gJB" secondAttribute="trailing" id="Rg8-c3-hD5"/>
+                            <constraint firstItem="RDB-4G-gJB" firstAttribute="leading" secondItem="6jY-Sw-Qx3" secondAttribute="leading" id="cEf-iy-gBG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hsA-kB-jYj"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jLa-8u-LIM"/>
+                    <navigationItem key="navigationItem" title="Try On" id="lAk-qB-Wgd">
+                        <barButtonItem key="rightBarButtonItem" style="done" id="wPB-IX-lON">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8te-vP-Y0O" userLabel="Finish">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="        Finish"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Azv-Bc-tCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,6 +77,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="change" width="85" height="85"/>
+        <image name="personFullBody" width="1128" height="2016"/>
         <image name="shirt_icon" width="24" height="24"/>
     </resources>
 </document>
