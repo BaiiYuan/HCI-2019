@@ -10,6 +10,8 @@ import UIKit
 
 class homepageViewController: UIViewController {
 
+    @IBOutlet weak var newsFirst: UIButton!
+    @IBOutlet weak var newsSecond: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,14 @@ class homepageViewController: UIViewController {
         super.viewWillAppear(animated)
     }
     
+    
+    @IBAction func clickOnFirstNews(_ sender: UIButton) {
+         performSegue(withIdentifier: "goFirstNews", sender: sender)
+    }
+
+    @IBAction func clickOnSecondNews(_ sender: UIButton) {
+        performSegue(withIdentifier: "goSecondNews", sender: sender)
+    }
     @IBAction func showMessage(sender: UIButton) {
         let alertController = UIAlertController(title: "Welcome to My First App", message: "Hello World", preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
