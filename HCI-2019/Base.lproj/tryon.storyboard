@@ -13,7 +13,7 @@
         <!--Try On-->
         <scene sceneID="aD5-PT-Rby">
             <objects>
-                <viewController title="Try On" id="1Jc-e0-3ct" sceneMemberID="viewController">
+                <viewController title="Try On" id="1Jc-e0-3ct" customClass="tryonPreviewViewController" customModule="HCI_2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6jY-Sw-Qx3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,9 +30,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change" translatesAutoresizingMaskIntoConstraints="NO" id="E8L-Cz-1YK">
-                                <rect key="frame" x="237" y="274" width="25" height="25"/>
+                                <rect key="frame" x="232" y="290" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Oh-UW-2L3">
+                                <rect key="frame" x="229" y="285" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="goChangeCloth:" destination="1Jc-e0-3ct" eventType="touchUpInside" id="KmQ-rH-wm1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -43,19 +50,46 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hsA-kB-jYj"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Try On" id="lAk-qB-Wgd">
-                        <barButtonItem key="rightBarButtonItem" style="done" id="wPB-IX-lON">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8te-vP-Y0O" userLabel="Finish">
-                                <rect key="frame" x="302" y="7" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="        Finish"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Try On" id="lAk-qB-Wgd"/>
+                    <connections>
+                        <outlet property="changeClothButton" destination="3Oh-UW-2L3" id="7L3-65-MPY"/>
+                        <segue destination="db0-tv-9RN" kind="show" identifier="doChangeCloth" id="vcK-8c-Fbb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Azv-Bc-tCq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-148" y="33"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hq2-KR-0qV">
+            <objects>
+                <viewController id="db0-tv-9RN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qeh-uJ-hLI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Belly1" translatesAutoresizingMaskIntoConstraints="NO" id="MxG-If-V2V">
+                                <rect key="frame" x="0.0" y="88" width="414" height="289"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change" translatesAutoresizingMaskIntoConstraints="NO" id="JMj-Ww-8cU">
+                                <rect key="frame" x="258" y="121" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AQF-3j-kLn" firstAttribute="bottom" secondItem="MxG-If-V2V" secondAttribute="bottom" constant="436" id="FIR-1N-Zdc"/>
+                            <constraint firstItem="MxG-If-V2V" firstAttribute="leading" secondItem="AQF-3j-kLn" secondAttribute="leading" id="ZCq-nK-R3h"/>
+                            <constraint firstItem="MxG-If-V2V" firstAttribute="top" secondItem="AQF-3j-kLn" secondAttribute="top" id="j4R-BY-A0H"/>
+                            <constraint firstItem="AQF-3j-kLn" firstAttribute="trailing" secondItem="MxG-If-V2V" secondAttribute="trailing" id="nTm-Vr-fgs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AQF-3j-kLn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBM-uT-y4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="724.63768115942037" y="32.8125"/>
         </scene>
         <!--Try On-->
         <scene sceneID="cL9-TG-MAT">
@@ -77,6 +111,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Belly1" width="720" height="806"/>
         <image name="change" width="85" height="85"/>
         <image name="personFullBody" width="1128" height="2016"/>
         <image name="shirt_icon" width="24" height="24"/>
