@@ -19,9 +19,6 @@ class cameraTakedViewController: UIViewController {
     }
 
     @IBAction func onClick(_ sender: UIButton) {
-        performSegue(withIdentifier: "finishAdd", sender: sender)
-        let alert = UIAlertController(title: "Successful!", message: "你成功新增了一件衣物", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK!", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
+        performSegue(withIdentifier: "addTag", sender: sender)
     }
 }
