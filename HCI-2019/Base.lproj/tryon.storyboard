@@ -153,6 +153,25 @@
                                                     <action selector="clickBellyButton2:" destination="db0-tv-9RN" eventType="touchUpInside" id="r1Y-fn-dbT"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R0E-wL-e5W">
+                                                <rect key="frame" x="603" y="11" width="250" height="280"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="clickBellyButton2:" destination="db0-tv-9RN" eventType="touchUpInside" id="ver-XZ-dtq"/>
+                                                    <action selector="clickBellyButton3:" destination="db0-tv-9RN" eventType="touchUpInside" id="NNm-ZP-9lc"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="UiL-Hn-7K4">
+                                                <rect key="frame" x="285" y="-11" width="69" height="68"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NEW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0Z-f3-kE0">
+                                                <rect key="frame" x="304" y="16" width="32" height="17"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.95844195885677375" green="1" blue="0.016247470612438031" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <viewLayoutGuide key="safeArea" id="Gqq-aY-XCX"/>
@@ -166,6 +185,17 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="questionMark" translatesAutoresizingMaskIntoConstraints="NO" id="U6z-JC-qbX">
+                                <rect key="frame" x="259" y="154" width="26" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kh7-DG-d2L">
+                                <rect key="frame" x="258" y="152" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="clickInfoButton:" destination="db0-tv-9RN" eventType="touchUpInside" id="v9E-jZ-bGV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -180,11 +210,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AQF-3j-kLn"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Try On" id="PPL-UC-wdQ"/>
+                    <navigationItem key="navigationItem" title="Try On" id="PPL-UC-wdQ">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="0wB-0b-Jhf">
+                            <connections>
+                                <action selector="clickDoneButton:" destination="db0-tv-9RN" id="vYF-c0-NZh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bellyButton1" destination="NEk-ob-ZRC" id="cAR-Xm-Ko2"/>
                         <outlet property="bellyButton2" destination="WZG-00-Vyu" id="GaG-dY-qKz"/>
+                        <outlet property="bellyButton3" destination="R0E-wL-e5W" id="RmM-Pl-wzG"/>
                         <outlet property="bellyImageView" destination="MxG-If-V2V" id="vXT-cD-cIC"/>
+                        <outlet property="doneButton" destination="0wB-0b-Jhf" id="eM4-Iu-GGb"/>
+                        <outlet property="infoButton" destination="Kh7-DG-d2L" id="ehn-Gb-QZa"/>
+                        <outlet property="infoImageView" destination="U6z-JC-qbX" id="Nj4-Jx-Okh"/>
+                        <segue destination="EGS-EB-uok" kind="show" identifier="goInfo" id="ynt-AH-PwQ"/>
+                        <segue destination="Zpx-6f-Vfh" kind="show" identifier="goDone" id="04P-Yn-34C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBM-uT-y4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -209,6 +251,70 @@
             </objects>
             <point key="canvasLocation" x="-1148" y="34"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="GuH-tu-6av">
+            <objects>
+                <viewController id="EGS-EB-uok" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JvL-Da-C6P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="puW-1F-3aK">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="l43-96-4R6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qi-eR-avL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713" y="421"/>
+        </scene>
+        <!--Try On-->
+        <scene sceneID="wT7-f4-RHn">
+            <objects>
+                <viewController title="Try On" id="Zpx-6f-Vfh" customClass="tryonPreviewViewController" customModule="HCI_2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yNO-Wz-Ryw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personFullBody2" translatesAutoresizingMaskIntoConstraints="NO" id="RWR-Jn-VXk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change" translatesAutoresizingMaskIntoConstraints="NO" id="bZ9-JX-gqV">
+                                <rect key="frame" x="116" y="523" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change" translatesAutoresizingMaskIntoConstraints="NO" id="MxI-ld-zdn">
+                                <rect key="frame" x="234" y="704" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change" translatesAutoresizingMaskIntoConstraints="NO" id="fyW-tc-Mue">
+                                <rect key="frame" x="234" y="260" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RWR-Jn-VXk" secondAttribute="trailing" id="Gd9-iT-xG1"/>
+                            <constraint firstItem="RWR-Jn-VXk" firstAttribute="leading" secondItem="yNO-Wz-Ryw" secondAttribute="leading" id="Re4-1q-4Wd"/>
+                            <constraint firstItem="RWR-Jn-VXk" firstAttribute="top" secondItem="yNO-Wz-Ryw" secondAttribute="top" id="dox-wx-6dO"/>
+                            <constraint firstAttribute="bottom" secondItem="RWR-Jn-VXk" secondAttribute="bottom" id="rXR-Kt-sCG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CAb-DJ-9Gr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Preview" id="3JY-9x-HcE"/>
+                    <connections>
+                        <outlet property="fullBodyImageView" destination="RWR-Jn-VXk" id="kok-aF-kfh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFh-fa-Ozd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687" y="-270"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Belly1" width="720" height="806"/>
@@ -216,6 +322,9 @@
         <image name="Belly3" width="720" height="930"/>
         <image name="change" width="85" height="85"/>
         <image name="personFullBody1" width="1128" height="2016"/>
+        <image name="personFullBody2" width="2256" height="4032"/>
+        <image name="questionMark" width="512" height="512"/>
         <image name="shirt_icon" width="24" height="24"/>
+        <image name="star" width="135" height="127"/>
     </resources>
 </document>

@@ -24,6 +24,7 @@ class tryonPreviewViewController: UIViewController, clothChangerDelegate {
     
     @IBAction func goChangeCloth(_ sender: UIButton) {
         performSegue(withIdentifier: "doChangeCloth", sender: sender)
+//        self.fullBodyImageView.image = UIImage(named: "personFullBody2")
     }
 
     public func changeCloth(name: String) {
