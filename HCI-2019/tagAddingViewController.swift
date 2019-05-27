@@ -8,7 +8,7 @@
 
 import UIKit
 
-class tagAddingViewController: UIViewController {
+class tagAddingViewController: UIViewController, UITabBarControllerDelegate {
 
     @IBOutlet weak var doneTagButton: UIBarButtonItem!
     @IBOutlet weak var mainClassButton: UIButton!
@@ -35,6 +35,8 @@ class tagAddingViewController: UIViewController {
         setBlueButton(button: colorButton1)
         setBlueButton(button: styleButton1)
         setBlueButton(button: brandButton1)
+
+        self.tabBarController?.delegate = self
     }
 
     func setBlueButton(button: UIButton) {
@@ -58,8 +60,14 @@ class tagAddingViewController: UIViewController {
     
     @IBAction func finishAddTag(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "finishAdd", sender: sender)
-        let alert = UIAlertController(title: "Successful!", message: "你成功新增了一件衣物", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK!", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
+//        let alert = UIAlertController(title: "Successful!", message: "你成功新增了一件衣物", preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "OK!", style: .default, handler: nil))
+//        present(alert, animated: true, completion: nil)
+
+        let alertController = UIAlertController(title: "你成功新增了一件衣物!", message: nil, preferredStyle: .alert)
+        present(alertController, animated: true, completion: nil)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            self.presentedViewController?.dismiss(animated: false, completion: nil)
+        }
     }
 }
