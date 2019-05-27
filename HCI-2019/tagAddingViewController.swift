@@ -11,24 +11,24 @@ import UIKit
 class tagAddingViewController: UIViewController {
 
     @IBOutlet weak var doneTagButton: UIBarButtonItem!
-    @IBOutlet weak var mainClassButton1: UIButton!
-    @IBOutlet weak var mainClassLabel1: UILabel!
+    @IBOutlet weak var mainClassButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainClassLabel1.textColor = UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1)
+//        mainClassLabel1.textColor = UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1)
         // Do any additional setup after loading the view.
     }
     
 
     @IBAction func click(_ sender: UIButton) {
-        if mainClassLabel1.textColor == UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1) {
-            mainClassButton1.setImage(UIImage(named: "buttonBlue"), for: .normal)
-            mainClassLabel1.textColor = .white
+        if mainClassButton.titleColor(for: .normal) == UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1) {
+            mainClassButton.setBackgroundImage(UIImage(named: "buttonBlue"), for: .normal)
+            mainClassButton.setTitleColor(.white, for: .normal)
         } else {
-            mainClassButton1.setImage(UIImage(named: "buttonGray"), for: .normal)
-            mainClassLabel1.textColor = UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1)
+            mainClassButton.setBackgroundImage(UIImage(named: "buttonGray"), for: .normal)
+            mainClassButton.setTitleColor(UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1), for: .normal)
         }
     }
+    
     
     @IBAction func finishAddTag(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "finishAdd", sender: sender)

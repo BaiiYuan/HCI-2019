@@ -247,7 +247,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1301"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_1" translatesAutoresizingMaskIntoConstraints="NO" id="nCe-CL-R0l">
-                                                <rect key="frame" x="-115.66666666666669" y="0.0" width="645.33333333333348" height="241.00000000000006"/>
+                                                <rect key="frame" x="199" y="0.0" width="16" height="241"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="240.99999999999994" id="eqs-E9-jWw"/>
                                                 </constraints>
