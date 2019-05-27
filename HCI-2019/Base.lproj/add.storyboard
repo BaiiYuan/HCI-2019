@@ -240,7 +240,7 @@
                                                     <constraint firstAttribute="height" constant="289" id="s03-Ze-JHp"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名城： _______________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49e-zS-27X">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名稱： _______________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49e-zS-27X">
                                                 <rect key="frame" x="60" y="348" width="223" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -252,43 +252,179 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主類別：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwG-Q6-S4y">
-                                                <rect key="frame" x="50" y="493" width="70" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="主類別：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwG-Q6-S4y">
+                                                <rect key="frame" x="30" y="493" width="70" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="類別：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0M-Gf-iYR">
-                                                <rect key="frame" x="68" y="539" width="52" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="類別：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0M-Gf-iYR">
+                                                <rect key="frame" x="44" y="552" width="52" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="風格：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNt-yq-Baj">
-                                                <rect key="frame" x="68" y="585" width="52" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="風格：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNt-yq-Baj">
+                                                <rect key="frame" x="44" y="725" width="52" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="顏色：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQD-bJ-Niy">
-                                                <rect key="frame" x="68" y="631" width="52" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="顏色：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQD-bJ-Niy">
+                                                <rect key="frame" x="44" y="663" width="52" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="品牌：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufq-aq-o1t">
-                                                <rect key="frame" x="68" y="677" width="52" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="品牌：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufq-aq-o1t">
+                                                <rect key="frame" x="44" y="793" width="52" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnQ-77-gPE">
-                                                <rect key="frame" x="145" y="483" width="85" height="40"/>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnQ-77-gPE">
+                                                <rect key="frame" x="104" y="484" width="85" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="上半身" backgroundImage="buttonGray">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="CVK-9d-6Rz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHt-EN-ulM">
+                                                <rect key="frame" x="104" y="542" width="85" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="連衣裙" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="fA9-DA-Nuf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnp-qW-pf0">
+                                                <rect key="frame" x="197" y="484.5" width="85" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="下半身" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="t7T-Bf-Pmh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdj-LD-244">
+                                                <rect key="frame" x="288" y="484" width="85" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="配件" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="wZu-92-DDq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8F1-Jc-lcf">
+                                                <rect key="frame" x="291" y="542" width="85" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="外套" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="XB0-5S-o4z"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBX-1o-NTC">
+                                                <rect key="frame" x="104" y="590" width="85" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="上衣" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="wbK-vz-0Mx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSN-UX-u7f">
+                                                <rect key="frame" x="198" y="590" width="32" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="+" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="ZXs-UP-bOB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prI-BZ-m4r">
+                                                <rect key="frame" x="104" y="653" width="85" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="灰" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="qBh-aB-2FJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60W-jJ-iId">
+                                                <rect key="frame" x="104" y="715" width="85" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="休閒" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="n5d-MK-YzF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bK-mS-2ef">
+                                                <rect key="frame" x="104" y="782" width="85" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="UNIQLO" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="mMN-BX-gVW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFq-7g-4g3">
+                                                <rect key="frame" x="198" y="542" width="85" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="針織衫" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="mhr-pB-qcU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pB-6r-Pel">
+                                                <rect key="frame" x="198" y="653" width="32" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="+" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="vqB-Uz-M8y"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eL7-Vu-Ggh">
+                                                <rect key="frame" x="198" y="715" width="32" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="+" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="v24-VQ-gjD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3U-an-rfL">
+                                                <rect key="frame" x="198" y="782" width="32" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="+" backgroundImage="buttonGray">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="click:" destination="IX5-0E-UAD" eventType="touchUpInside" id="bLO-y8-EZS"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -297,29 +433,12 @@
                                             <constraint firstItem="I6y-oz-DQJ" firstAttribute="top" secondItem="49e-zS-27X" secondAttribute="bottom" constant="21" id="0Ph-73-Inw"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="49e-zS-27X" secondAttribute="trailing" constant="20" symbolic="YES" id="3Hm-td-tm3"/>
                                             <constraint firstItem="49e-zS-27X" firstAttribute="leading" secondItem="I6y-oz-DQJ" secondAttribute="leading" id="3ld-Sf-qTs"/>
-                                            <constraint firstItem="vQD-bJ-Niy" firstAttribute="leading" secondItem="tNt-yq-Baj" secondAttribute="leading" id="8d5-Fz-k4L"/>
-                                            <constraint firstItem="rnQ-77-gPE" firstAttribute="top" secondItem="LNU-0H-FqG" secondAttribute="top" constant="483" id="9u3-Sm-r50"/>
-                                            <constraint firstItem="T0M-Gf-iYR" firstAttribute="leading" secondItem="LNU-0H-FqG" secondAttribute="leading" constant="68" id="Gx1-jK-W7e"/>
                                             <constraint firstItem="49e-zS-27X" firstAttribute="top" secondItem="Ms3-RB-DEh" secondAttribute="bottom" constant="59" id="Hda-Ab-oZd"/>
                                             <constraint firstAttribute="trailing" secondItem="Ms3-RB-DEh" secondAttribute="trailing" id="Hex-cf-7J1"/>
-                                            <constraint firstItem="Ufq-aq-o1t" firstAttribute="top" secondItem="vQD-bJ-Niy" secondAttribute="bottom" constant="25" id="Lru-6b-k3b"/>
                                             <constraint firstItem="Ms3-RB-DEh" firstAttribute="leading" secondItem="LNU-0H-FqG" secondAttribute="leading" id="Qrb-Ce-bFQ"/>
-                                            <constraint firstItem="tNt-yq-Baj" firstAttribute="top" secondItem="T0M-Gf-iYR" secondAttribute="bottom" constant="25" id="RHP-lk-9L6"/>
                                             <constraint firstItem="49e-zS-27X" firstAttribute="top" secondItem="LNU-0H-FqG" secondAttribute="top" constant="348" id="S52-Pe-qQB"/>
-                                            <constraint firstItem="T0M-Gf-iYR" firstAttribute="top" secondItem="gwG-Q6-S4y" secondAttribute="bottom" constant="25" id="VdP-go-ncC"/>
-                                            <constraint firstItem="gwG-Q6-S4y" firstAttribute="top" secondItem="I6y-oz-DQJ" secondAttribute="bottom" constant="82" id="W78-1e-gml"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="I6y-oz-DQJ" secondAttribute="trailing" constant="20" symbolic="YES" id="XgP-2V-tX0"/>
-                                            <constraint firstItem="gwG-Q6-S4y" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tNt-yq-Baj" secondAttribute="trailing" id="aB1-U0-u4r"/>
                                             <constraint firstItem="49e-zS-27X" firstAttribute="leading" secondItem="LNU-0H-FqG" secondAttribute="leading" constant="60" id="cEg-Sd-2jC"/>
-                                            <constraint firstItem="vQD-bJ-Niy" firstAttribute="top" secondItem="tNt-yq-Baj" secondAttribute="bottom" constant="25" id="f8G-O6-aco"/>
-                                            <constraint firstItem="gwG-Q6-S4y" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="T0M-Gf-iYR" secondAttribute="trailing" id="fLC-xZ-BnQ"/>
-                                            <constraint firstItem="rnQ-77-gPE" firstAttribute="leading" secondItem="gwG-Q6-S4y" secondAttribute="trailing" constant="25" id="h2v-X6-nqb"/>
-                                            <constraint firstItem="Ufq-aq-o1t" firstAttribute="leading" secondItem="vQD-bJ-Niy" secondAttribute="leading" id="k2k-Mw-DxZ"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rnQ-77-gPE" secondAttribute="trailing" constant="20" symbolic="YES" id="mA2-kA-pN7"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vQD-bJ-Niy" secondAttribute="trailing" constant="20" symbolic="YES" id="nRv-18-anO"/>
-                                            <constraint firstItem="gwG-Q6-S4y" firstAttribute="leading" secondItem="LNU-0H-FqG" secondAttribute="leading" constant="50" id="okn-GV-kgY"/>
-                                            <constraint firstItem="tNt-yq-Baj" firstAttribute="leading" secondItem="LNU-0H-FqG" secondAttribute="leading" constant="68" id="qQc-ec-ULJ"/>
-                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ufq-aq-o1t" secondAttribute="trailing" constant="20" symbolic="YES" id="qd8-ZQ-v68"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -350,8 +469,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="brandButton1" destination="7bK-mS-2ef" id="gMV-KE-hRX"/>
+                        <outlet property="classButton1" destination="mHt-EN-ulM" id="HXw-Ez-ktz"/>
+                        <outlet property="classButton2" destination="oFq-7g-4g3" id="ExM-Hq-SnB"/>
+                        <outlet property="classButton3" destination="8F1-Jc-lcf" id="E7C-7f-mJF"/>
+                        <outlet property="classButton4" destination="rBX-1o-NTC" id="b6B-Mn-U4n"/>
+                        <outlet property="colorButton1" destination="prI-BZ-m4r" id="BG9-0A-qTZ"/>
                         <outlet property="doneTagButton" destination="EZz-T8-lVh" id="uRw-bS-ula"/>
                         <outlet property="mainClassButton" destination="rnQ-77-gPE" id="MCv-1F-xgJ"/>
+                        <outlet property="mainClassButton1" destination="xnp-qW-pf0" id="hpf-o2-4QO"/>
+                        <outlet property="mainClassButton2" destination="hdj-LD-244" id="wi9-83-KpI"/>
+                        <outlet property="styleButton1" destination="60W-jJ-iId" id="QZC-Sb-D97"/>
                         <segue destination="7cs-0n-pLu" kind="show" identifier="finishAdd" id="hBS-bS-3ZA"/>
                     </connections>
                 </viewController>

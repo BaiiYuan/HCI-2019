@@ -12,23 +12,49 @@ class tagAddingViewController: UIViewController {
 
     @IBOutlet weak var doneTagButton: UIBarButtonItem!
     @IBOutlet weak var mainClassButton: UIButton!
+    @IBOutlet weak var mainClassButton1: UIButton!
+    @IBOutlet weak var mainClassButton2: UIButton!
+
+    @IBOutlet weak var classButton1: UIButton!
+    @IBOutlet weak var classButton2: UIButton!
+    @IBOutlet weak var classButton3: UIButton!
+    @IBOutlet weak var classButton4: UIButton!
+
+    @IBOutlet weak var colorButton1: UIButton!
+    @IBOutlet weak var styleButton1: UIButton!
+    @IBOutlet weak var brandButton1: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 //        mainClassLabel1.textColor = UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1)
-        // Do any additional setup after loading the view.
-    }
-    
+        mainClassButton1.isEnabled = false
+        mainClassButton2.isEnabled = false
 
-    @IBAction func click(_ sender: UIButton) {
-        if mainClassButton.titleColor(for: .normal) == UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1) {
-            mainClassButton.setBackgroundImage(UIImage(named: "buttonBlue"), for: .normal)
-            mainClassButton.setTitleColor(.white, for: .normal)
+        setBlueButton(button: mainClassButton)
+        setBlueButton(button: classButton2)
+        setBlueButton(button: colorButton1)
+        setBlueButton(button: styleButton1)
+        setBlueButton(button: brandButton1)
+    }
+
+    func setBlueButton(button: UIButton) {
+        button.setBackgroundImage(UIImage(named: "buttonBlue"), for: .normal)
+        button.setTitleColor(.white, for: .normal)
+    }
+
+    func changeButtonColor(button: UIButton) {
+        if button.titleColor(for: .normal) == UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1) {
+            button.setBackgroundImage(UIImage(named: "buttonBlue"), for: .normal)
+            button.setTitleColor(.white, for: .normal)
         } else {
-            mainClassButton.setBackgroundImage(UIImage(named: "buttonGray"), for: .normal)
-            mainClassButton.setTitleColor(UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1), for: .normal)
+            button.setBackgroundImage(UIImage(named: "buttonGray"), for: .normal)
+            button.setTitleColor(UIColor(red: 0/255, green: 122/255, blue: 255/255, alpha: 1), for: .normal)
         }
     }
-    
+
+    @IBAction func click(_ sender: UIButton) {
+        changeButtonColor(button: sender)
+    }
     
     @IBAction func finishAddTag(_ sender: UIBarButtonItem) {
         performSegue(withIdentifier: "finishAdd", sender: sender)
@@ -36,15 +62,4 @@ class tagAddingViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK!", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
