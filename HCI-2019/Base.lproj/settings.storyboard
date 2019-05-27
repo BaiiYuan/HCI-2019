@@ -6,28 +6,10 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings-->
-        <scene sceneID="La5-WA-N9c">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jl5-dN-620" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="8XX-Ct-WxN" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="szx-cN-iPa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <connections>
-                            <outlet property="dataSource" destination="8XX-Ct-WxN" id="ksT-XT-E3k"/>
-                            <outlet property="delegate" destination="8XX-Ct-WxN" id="cal-d0-EcY"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Settings" id="Og7-Zv-ae6"/>
-                </tableViewController>
-            </objects>
-            <point key="canvasLocation" x="1248" y="-367"/>
-        </scene>
         <!--Setting-->
         <scene sceneID="F6Y-FY-XBX">
             <objects>
@@ -39,15 +21,68 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="8XX-Ct-WxN" kind="relationship" relationship="rootViewController" id="Zjc-GC-djE"/>
+                        <segue destination="am4-3N-Ywh" kind="relationship" relationship="rootViewController" id="ZmY-6O-U1p"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQQ-0A-Ef0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="329" y="-367"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="c8G-el-wSN">
+            <objects>
+                <viewController id="am4-3N-Ywh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UCC-HS-Yeq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Buq-p5-wcd">
+                                <rect key="frame" x="0.0" y="220" width="414" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="onS-xJ-OcF">
+                                        <rect key="frame" x="0.0" y="15" width="600" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Belly2" translatesAutoresizingMaskIntoConstraints="NO" id="Rb4-m7-kx6">
+                                                <rect key="frame" x="228" y="11" width="144" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Belly3" translatesAutoresizingMaskIntoConstraints="NO" id="Yls-Xi-c98">
+                                                <rect key="frame" x="418" y="11" width="144" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Belly1" translatesAutoresizingMaskIntoConstraints="NO" id="azw-ha-Nj9">
+                                                <rect key="frame" x="41" y="11" width="144" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="safeArea" id="K5j-zq-BbS"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="600" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g3K-wW-qnV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MLV-jG-eZ8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cRN-Sg-vlq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1218.840579710145" y="-368.30357142857139"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Belly1" width="720" height="806"/>
+        <image name="Belly2" width="720" height="822"/>
+        <image name="Belly3" width="720" height="930"/>
         <image name="setting_icon" width="24" height="24"/>
     </resources>
 </document>

@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personFullBody" translatesAutoresizingMaskIntoConstraints="NO" id="RDB-4G-gJB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personFullBody1" translatesAutoresizingMaskIntoConstraints="NO" id="RDB-4G-gJB">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="change" translatesAutoresizingMaskIntoConstraints="NO" id="R4d-yo-jB3">
@@ -50,9 +50,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hsA-kB-jYj"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Try On" id="lAk-qB-Wgd"/>
+                    <navigationItem key="navigationItem" title="Preview" id="lAk-qB-Wgd"/>
                     <connections>
                         <outlet property="changeClothButton" destination="3Oh-UW-2L3" id="7L3-65-MPY"/>
+                        <outlet property="fullBodyImageView" destination="RDB-4G-gJB" id="XlV-oQ-hTP"/>
                         <segue destination="db0-tv-9RN" kind="show" identifier="doChangeCloth" id="vcK-8c-Fbb"/>
                     </connections>
                 </viewController>
@@ -60,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="-149.27536231884059" y="32.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--Try On-->
         <scene sceneID="Hq2-KR-0qV">
             <objects>
-                <viewController id="db0-tv-9RN" sceneMemberID="viewController">
+                <viewController id="db0-tv-9RN" customClass="tryonChangeViewController" customModule="HCI_2019" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qeh-uJ-hLI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,16 +77,115 @@
                                 <rect key="frame" x="258" y="121" width="25" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KoC-xd-xm1">
+                                <rect key="frame" x="0.0" y="377" width="414" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="針織衫" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90a-L3-dz9">
+                                        <rect key="frame" x="128" y="26" width="62" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上衣" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZA-c9-0a6">
+                                        <rect key="frame" x="324" y="26" width="41" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="外套" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izy-9q-4gb">
+                                        <rect key="frame" x="233" y="26" width="41" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="連衣裙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8I-8a-mB0">
+                                        <rect key="frame" x="31" y="26" width="62" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.91076144366197187" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="K8I-8a-mB0" firstAttribute="leading" secondItem="KoC-xd-xm1" secondAttribute="leading" constant="31" id="4Bp-Ms-4eg"/>
+                                    <constraint firstItem="izy-9q-4gb" firstAttribute="top" secondItem="KoC-xd-xm1" secondAttribute="top" constant="26" id="Bow-IQ-m2S"/>
+                                    <constraint firstItem="izy-9q-4gb" firstAttribute="baseline" secondItem="K8I-8a-mB0" secondAttribute="baseline" id="CMw-Gw-ewH"/>
+                                    <constraint firstAttribute="trailing" secondItem="izy-9q-4gb" secondAttribute="trailing" constant="140" id="KEU-Sd-WCH"/>
+                                    <constraint firstItem="izy-9q-4gb" firstAttribute="baseline" secondItem="7ZA-c9-0a6" secondAttribute="baseline" id="NVQ-jm-92O"/>
+                                    <constraint firstItem="izy-9q-4gb" firstAttribute="leading" secondItem="90a-L3-dz9" secondAttribute="trailing" constant="43" id="Nvf-V5-pT5"/>
+                                    <constraint firstItem="7ZA-c9-0a6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="izy-9q-4gb" secondAttribute="trailing" symbolic="YES" id="krY-Kj-eAu"/>
+                                    <constraint firstItem="izy-9q-4gb" firstAttribute="baseline" secondItem="90a-L3-dz9" secondAttribute="baseline" id="t8i-Ic-MqC"/>
+                                    <constraint firstItem="90a-L3-dz9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="K8I-8a-mB0" secondAttribute="trailing" constant="8" symbolic="YES" id="zO0-CR-woJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="7ZA-c9-0a6" secondAttribute="trailing" constant="49" id="zU2-bc-JMq"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z05-TV-7Qs">
+                                <rect key="frame" x="0.0" y="457" width="414" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3CE-f9-JXt">
+                                        <rect key="frame" x="0.0" y="10" width="880" height="310"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Belly2" translatesAutoresizingMaskIntoConstraints="NO" id="PLU-74-06Z">
+                                                <rect key="frame" x="300" y="11" width="280" height="280"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Belly3" translatesAutoresizingMaskIntoConstraints="NO" id="tDV-s7-iay">
+                                                <rect key="frame" x="588" y="15" width="280" height="280"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Belly1" translatesAutoresizingMaskIntoConstraints="NO" id="A0Z-8K-D6R">
+                                                <rect key="frame" x="12" y="11" width="280" height="280"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEk-ob-ZRC">
+                                                <rect key="frame" x="27" y="11" width="250" height="280"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="clickBellyButton1:" destination="db0-tv-9RN" eventType="touchUpInside" id="eBI-Xa-SJs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZG-00-Vyu">
+                                                <rect key="frame" x="318" y="11" width="250" height="280"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="clickBellyButton2:" destination="db0-tv-9RN" eventType="touchUpInside" id="r1Y-fn-dbT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <viewLayoutGuide key="safeArea" id="Gqq-aY-XCX"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <viewLayoutGuide key="safeArea" id="60a-ht-cEb"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="880" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="KoC-xd-xm1" firstAttribute="trailing" secondItem="MxG-If-V2V" secondAttribute="trailing" id="8xB-1T-Fh6"/>
                             <constraint firstItem="AQF-3j-kLn" firstAttribute="bottom" secondItem="MxG-If-V2V" secondAttribute="bottom" constant="436" id="FIR-1N-Zdc"/>
+                            <constraint firstItem="KoC-xd-xm1" firstAttribute="leading" secondItem="MxG-If-V2V" secondAttribute="leading" id="YvX-Pt-rcR"/>
                             <constraint firstItem="MxG-If-V2V" firstAttribute="leading" secondItem="AQF-3j-kLn" secondAttribute="leading" id="ZCq-nK-R3h"/>
+                            <constraint firstAttribute="bottom" secondItem="KoC-xd-xm1" secondAttribute="bottom" constant="447" id="deP-zG-gAo"/>
                             <constraint firstItem="MxG-If-V2V" firstAttribute="top" secondItem="AQF-3j-kLn" secondAttribute="top" id="j4R-BY-A0H"/>
                             <constraint firstItem="AQF-3j-kLn" firstAttribute="trailing" secondItem="MxG-If-V2V" secondAttribute="trailing" id="nTm-Vr-fgs"/>
+                            <constraint firstItem="KoC-xd-xm1" firstAttribute="top" secondItem="MxG-If-V2V" secondAttribute="bottom" id="yWo-cH-TQQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AQF-3j-kLn"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Try On" id="PPL-UC-wdQ"/>
+                    <connections>
+                        <outlet property="bellyButton1" destination="NEk-ob-ZRC" id="cAR-Xm-Ko2"/>
+                        <outlet property="bellyButton2" destination="WZG-00-Vyu" id="GaG-dY-qKz"/>
+                        <outlet property="bellyImageView" destination="MxG-If-V2V" id="vXT-cD-cIC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nBM-uT-y4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,7 +202,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="1Jc-e0-3ct" kind="relationship" relationship="rootViewController" id="Zeu-Kg-LrE"/>
+                        <segue destination="1Jc-e0-3ct" kind="relationship" relationship="rootViewController" id="LiG-vG-yqx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7lz-Y3-8Jb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -112,8 +212,10 @@
     </scenes>
     <resources>
         <image name="Belly1" width="720" height="806"/>
+        <image name="Belly2" width="720" height="822"/>
+        <image name="Belly3" width="720" height="930"/>
         <image name="change" width="85" height="85"/>
-        <image name="personFullBody" width="1128" height="2016"/>
+        <image name="personFullBody1" width="1128" height="2016"/>
         <image name="shirt_icon" width="24" height="24"/>
     </resources>
 </document>
