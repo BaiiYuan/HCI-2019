@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8C779A0322899D41008AB781 /* homepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C779A0222899D41008AB781 /* homepageViewController.swift */; };
 		8CA76098229C922800866E3D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA76097229C922800866E3D /* Images.xcassets */; };
+		8CA7609A229D106A00866E3D /* MyLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA76099229D106A00866E3D /* MyLaunchScreen.storyboard */; };
 		91380E732287FF7C00F37435 /* settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91380E712287FF7C00F37435 /* settings.storyboard */; };
 		91380E762287FFB000F37435 /* add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91380E742287FFB000F37435 /* add.storyboard */; };
 		91380EF12288290D00F37435 /* addViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91380EF02288290D00F37435 /* addViewController.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		8C779A0222899D41008AB781 /* homepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homepageViewController.swift; sourceTree = "<group>"; };
 		8CA76097229C922800866E3D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8CA76099229D106A00866E3D /* MyLaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyLaunchScreen.storyboard; sourceTree = "<group>"; };
 		91380E722287FF7C00F37435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/settings.storyboard; sourceTree = "<group>"; };
 		91380E752287FFB000F37435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/add.storyboard; sourceTree = "<group>"; };
 		91380EF02288290D00F37435 /* addViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				91CEA8FC2287F88400790E35 /* Assets.xcassets */,
 				91CEA9012287F88400790E35 /* Info.plist */,
 				8CA76097229C922800866E3D /* Images.xcassets */,
+				8CA76099229D106A00866E3D /* MyLaunchScreen.storyboard */,
 			);
 			path = "HCI-2019";
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				91CEA8FD2287F88400790E35 /* Assets.xcassets in Resources */,
 				91380E762287FFB000F37435 /* add.storyboard in Resources */,
 				91CEA8FB2287F88300790E35 /* Main.storyboard in Resources */,
+				8CA7609A229D106A00866E3D /* MyLaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +378,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJM492MQ3S;
 				INFOPLIST_FILE = "HCI-2019/Info.plist";
@@ -393,7 +396,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJM492MQ3S;
 				INFOPLIST_FILE = "HCI-2019/Info.plist";
