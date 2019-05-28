@@ -10,6 +10,8 @@ Vloset Hi-Fi Prototype README
 ### OPERATING INSTRUCTIONS:
 我們利用swift + xcode來建立這次的prototype，此APP目前是跑在iPhone XR 以及 ios12的環境。請從以下網址下載repo並且用xcode開啟。開啟後按run / cmd+R 來開啟虛擬機測試。
 
+github: <https://github.com/BaiiYuan/HCI-2019>
+
 
 
 ### HOW TO USE:
