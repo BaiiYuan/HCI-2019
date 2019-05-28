@@ -26,6 +26,7 @@
 		91CEA9092287F9AF00790E35 /* homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CEA9072287F9AF00790E35 /* homepage.storyboard */; };
 		91CEA90E2287FB7E00790E35 /* closet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CEA90C2287FB7E00790E35 /* closet.storyboard */; };
 		91CEA9172287FBCE00790E35 /* tryon.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91CEA9152287FBCE00790E35 /* tryon.storyboard */; };
+		91E9E0A7229D176300C79171 /* settingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E9E0A6229D176300C79171 /* settingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		91CEA9082287F9AF00790E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/homepage.storyboard; sourceTree = "<group>"; };
 		91CEA90D2287FB7E00790E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/closet.storyboard; sourceTree = "<group>"; };
 		91CEA9162287FBCE00790E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/tryon.storyboard; sourceTree = "<group>"; };
+		91E9E0A6229D176300C79171 /* settingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				91CEA90C2287FB7E00790E35 /* closet.storyboard */,
 				91380EF222882A6800F37435 /* closetViewController.swift */,
 				91380E712287FF7C00F37435 /* settings.storyboard */,
+				91E9E0A6229D176300C79171 /* settingTableViewController.swift */,
 				916057162289F3B60094D8F9 /* cameraTakingViewController.swift */,
 				916057182289FA330094D8F9 /* cameraTakedViewController.swift */,
 				91CEA8FC2287F88400790E35 /* Assets.xcassets */,
@@ -190,6 +193,7 @@
 				9191D1F7228BA08B00942558 /* tagAddingViewController.swift in Sources */,
 				916AE4C5228AA3EF00A75244 /* tryonPreviewViewController.swift in Sources */,
 				91380EF322882A6800F37435 /* closetViewController.swift in Sources */,
+				91E9E0A7229D176300C79171 /* settingTableViewController.swift in Sources */,
 				91CEA8F42287F88300790E35 /* AppDelegate.swift in Sources */,
 				916057172289F3B60094D8F9 /* cameraTakingViewController.swift in Sources */,
 				916057192289FA330094D8F9 /* cameraTakedViewController.swift in Sources */,
