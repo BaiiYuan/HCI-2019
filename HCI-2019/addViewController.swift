@@ -30,7 +30,7 @@ class addViewController: UIViewController, UITabBarControllerDelegate {
 
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         if tabBarController.selectedIndex == 2 {
-            //            tabBarController.selectedIndex = 0
+//            tabBarController.selectedIndex = 3
             let controller = UIAlertController(title: "上傳照片", message: nil, preferredStyle: .actionSheet)
             controller.addAction(UIAlertAction(title: "拍照", style: .default, handler: {(action) -> Void in
                 self.performSegue(withIdentifier: "takePhoto", sender: self)

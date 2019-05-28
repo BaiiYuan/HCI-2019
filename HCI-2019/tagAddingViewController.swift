@@ -37,6 +37,8 @@ class tagAddingViewController: UIViewController, UITabBarControllerDelegate {
         setBlueButton(button: brandButton1)
 
         self.tabBarController?.delegate = self
+
+        
     }
 
     func setBlueButton(button: UIButton) {
@@ -66,8 +68,11 @@ class tagAddingViewController: UIViewController, UITabBarControllerDelegate {
 
         let alertController = UIAlertController(title: "你成功新增了一件衣物!", message: nil, preferredStyle: .alert)
         present(alertController, animated: true, completion: nil)
+
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-            self.presentedViewController?.dismiss(animated: false, completion: nil)
+            self.presentedViewController?.dismiss(animated: true, completion: nil)
+            self.tabBarController?.selectedIndex = 3
         }
+
     }
 }
