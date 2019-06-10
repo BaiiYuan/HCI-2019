@@ -12,6 +12,9 @@ class homepageViewController: UIViewController {
 
     @IBOutlet weak var newsFirst: UIButton!
     @IBOutlet weak var newsSecond: UIButton!
+    @IBOutlet weak var newsThird: UIButton!
+    @IBOutlet weak var NewsForth: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,6 +32,13 @@ class homepageViewController: UIViewController {
 
     @IBAction func clickOnSecondNews(_ sender: UIButton) {
         performSegue(withIdentifier: "goSecondNews", sender: sender)
+    }
+    
+    @IBAction func clickOnThirdNews(_ sender: UIButton) {
+        performSegue(withIdentifier: "goThirdNews", sender: sender)
+    }
+    @IBAction func clickOnForthNews(_ sender: UIButton) {
+        performSegue(withIdentifier: "goForthNews", sender: sender)
     }
     @IBAction func showMessage(sender: UIButton) {
         let alertController = UIAlertController(title: "Welcome to My First App", message: "Hello World", preferredStyle: UIAlertController.Style.alert)
